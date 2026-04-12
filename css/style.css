@@ -793,6 +793,13 @@ button {
   background: #008f40;
 }
 
+.delivery-logo {
+  height: 18px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
 /* Hours Banner */
 .branches__hours {
   display: flex;
