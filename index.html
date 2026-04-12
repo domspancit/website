@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DOM'S Pancit – Your Everyday Pancit. Freshly cooked classic Filipino noodles available for take-out, pick-up, and delivery via GrabFood and Foodpanda. Multiple branches in Quezon City." />
+  <meta name="keywords" content="DOM'S Pancit, pancit, Filipino noodles, Quezon City, Fairview, Novaliches, Commonwealth, palabok, bihon, miki bihon, delivery" />
+  <meta name="author" content="DOM'S Pancit" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DOM'S Pancit – Your Everyday Pancit" />
+  <meta property="og:description" content="Freshly cooked classic Filipino noodles. Available for take-out, pick-up, GrabFood & Foodpanda." />
+  <meta property="og:type" content="website" />
+
+  <title>DOM'S Pancit – Your Everyday Pancit</title>
+
+  <!-- Google Fonts: Poppins & Pacifico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ====================================================
+       1. NAVBAR
+  ==================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+
+      <!-- Logo + Brand Name -->
+      <a href="#home" class="navbar__brand" aria-label="DOM'S Pancit Home">
+        <img src="images/logo.png" alt="DOM'S Pancit Logo" class="navbar__logo" />
+        <span class="navbar__name">DOM'S Pancit</span>
+      </a>
+
+      <!-- Hamburger Button (mobile) -->
+      <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav class="navbar__nav" id="navLinks" aria-label="Main navigation">
+        <a href="#home"     class="navbar__link">Home</a>
+        <a href="#about"    class="navbar__link">About</a>
+        <a href="#menu"     class="navbar__link">Menu</a>
+        <a href="#branches" class="navbar__link">Find Us</a>
+        <a href="#contact"  class="navbar__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ====================================================
+       2. HERO SECTION
+  ==================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+
+      <!-- Left: Text Content -->
+      <div class="hero__content">
+        <p class="hero__eyebrow">🍜 Freshly Cooked Daily</p>
+        <h1 class="hero__headline">Your Everyday<br />Pancit</h1>
+        <p class="hero__subtext">
+          Freshly cooked classic Filipino noodles that will
+          satisfy your cravings — available for take-out,
+          pick-up, and delivery.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero__cta">
+          <a href="#menu" class="btn btn--primary" id="heroMenuBtn">View Our Menu</a>
+          <a href="https://www.facebook.com/profile.php?id=100071802099526"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn--outline" id="heroOrderBtn">Order Now</a>
+        </div>
+
+        <!-- Delivery Badges -->
+        <div class="hero__badges">
+          <span class="badge badge--grab">🟢 GrabFood</span>
+          <span class="badge badge--panda">🐼 Foodpanda</span>
+        </div>
+      </div>
+
+      <!-- Right: Hero Image -->
+      <div class="hero__image-wrap">
+        <img src="images/hero.jpg" alt="A delicious serving of DOM'S Pancit Bihon" class="hero__image" />
+      </div>
+
+    </div>
+
+    <!-- Decorative wave divider -->
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FFF8F0"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       3. ABOUT SECTION
+  ==================================================== -->
+  <section class="about section" id="about">
+    <div class="container">
+
+      <h2 class="section__title">About DOM'S Pancit</h2>
+      <div class="section__underline" aria-hidden="true"></div>
+
+      <p class="about__description">
+        DOM'S Pancit has been serving freshly cooked classic Filipino noodles to
+        satisfy your everyday cravings. Available for take-out and pick-up, we
+        bring the taste of home-cooked pancit right to your table. Made with love,
+        served with pride — every batch is cooked fresh for every order.
+      </p>
+
+      <!-- Highlight Cards -->
+      <div class="about__cards">
+
+        <div class="about__card">
+          <div class="about__icon">🍜</div>
+          <h3 class="about__card-title">Freshly Cooked Daily</h3>
+          <p class="about__card-text">Every order is cooked fresh — no re-heated servings, just pure, home-cooked flavor in every bite.</p>
+        </div>
+
+        <div class="about__card">
+          <div class="about__icon">🥡</div>
+          <h3 class="about__card-title">Take-out &amp; Pick-up</h3>
+          <p class="about__card-text">Convenient take-out and pick-up options available at all branches, plus delivery via Grab Express &amp; Lalamove.</p>
+        </div>
+
+        <div class="about__card">
+          <div class="about__icon">📍</div>
+          <h3 class="about__card-title">Multiple Branches</h3>
+          <p class="about__card-text">Three branches across Quezon City — in Novaliches, Commonwealth, and Fairview — serving your community.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       4. MENU SECTION
+  ==================================================== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+
+      <h2 class="section__title">DOM'S Menu</h2>
+      <div class="section__underline" aria-hidden="true"></div>
+
+      <!-- Tab Buttons -->
+      <div class="menu__tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu__tab active" id="tab-pancit"   data-target="panel-pancit"   role="tab" aria-selected="true"  aria-controls="panel-pancit">Pancit &amp; Pasta</button>
+        <button class="menu__tab"        id="tab-spicy"    data-target="panel-spicy"    role="tab" aria-selected="false" aria-controls="panel-spicy">Spicy Variants</button>
+        <button class="menu__tab"        id="tab-addons"   data-target="panel-addons"   role="tab" aria-selected="false" aria-controls="panel-addons">Add-ons</button>
+        <button class="menu__tab"        id="tab-drinks"   data-target="panel-drinks"   role="tab" aria-selected="false" aria-controls="panel-drinks">Drinks</button>
+      </div>
+
+      <!-- ---- Tab Panel: Pancit & Pasta ---- -->
+      <div class="menu__panel active" id="panel-pancit" role="tabpanel" aria-labelledby="tab-pancit">
+        <div class="menu__panel-img">
+          <img src="images/menu/pancit.jpg" alt="DOM'S Pancit and Pasta dishes" />
+        </div>
+
+        <div class="menu__table-wrap">
+          <p class="menu__size-note">Serving sizes: <strong>S</strong> (4–5 pax) &nbsp;·&nbsp; <strong>M</strong> (8–10 pax) &nbsp;·&nbsp; <strong>L</strong> (13–15 pax) &nbsp;·&nbsp; <strong>XL</strong> (18–20 pax)</p>
+          <div class="table-scroll">
+            <table class="menu__table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>L</th>
+                  <th>XL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Bihon Guisado</td>        <td>₱400</td>  <td>₱720</td>   <td>₱1,020</td>  <td>₱1,230</td></tr>
+                <tr><td>Miki Bihon</td>            <td>₱430</td>  <td>₱770</td>   <td>₱1,050</td>  <td>₱1,270</td></tr>
+                <tr><td>Palabok</td>               <td>₱430</td>  <td>₱770</td>   <td>₱1,050</td>  <td>₱1,270</td></tr>
+                <tr><td>Pancit Luglog</td>         <td>₱490</td>  <td>₱840</td>   <td>₱1,370</td>  <td>₱1,820</td></tr>
+                <tr><td>Pancit Sisig</td>          <td>₱490</td>  <td>₱950</td>   <td>₱1,370</td>  <td>₱1,820</td></tr>
+                <tr><td>Spaghetti</td>             <td>₱440</td>  <td>₱860</td>   <td>₱1,300</td>  <td>₱1,760</td></tr>
+                <tr><td>Macaroni Spaghetti</td>    <td>₱500</td>  <td>₱920</td>   <td>₱1,360</td>  <td>₱1,800</td></tr>
+                <tr><td>Pancit Canton</td>         <td class="na">—</td> <td>₱690</td> <td>₱1,100</td> <td class="na">—</td></tr>
+                <tr><td>Japchae</td>               <td>₱650</td>  <td>₱1,300</td> <td class="na">—</td> <td class="na">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Tab Panel: Spicy Variants ---- -->
+      <div class="menu__panel" id="panel-spicy" role="tabpanel" aria-labelledby="tab-spicy">
+        <div class="menu__panel-img">
+          <img src="images/menu/spicy.jpg" alt="DOM'S Spicy Pancit variants" />
+        </div>
+
+        <div class="menu__table-wrap">
+          <p class="menu__size-note">Serving sizes: <strong>S</strong> (4–5 pax) &nbsp;·&nbsp; <strong>M</strong> (8–10 pax) &nbsp;·&nbsp; <strong>L</strong> (13–15 pax) &nbsp;·&nbsp; <strong>XL</strong> (18–20 pax)</p>
+          <div class="table-scroll">
+            <table class="menu__table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>L</th>
+                  <th>XL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Spicy Bihon Guisado</td>  <td>₱400</td>  <td>₱720</td>  <td>₱1,020</td>  <td>₱1,230</td></tr>
+                <tr><td>Spicy Miki Bihon</td>     <td>₱430</td>  <td>₱770</td>  <td>₱1,050</td>  <td>₱1,270</td></tr>
+                <tr>
+                  <td>Spicy Lumpia <span class="item-note">(12 pcs)</span></td>
+                  <td>₱350</td>
+                  <td class="na">—</td>
+                  <td class="na">—</td>
+                  <td class="na">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Tab Panel: Add-ons ---- -->
+      <div class="menu__panel" id="panel-addons" role="tabpanel" aria-labelledby="tab-addons">
+        <div class="menu__panel-img">
+          <img src="images/menu/addons.jpg" alt="DOM'S Add-on dishes" />
+        </div>
+
+        <div class="menu__table-wrap">
+          <div class="table-scroll">
+            <table class="menu__table menu__table--addons">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Dom's Fried Chicken</td>                              <td>₱435</td></tr>
+                <tr><td>Chicken Cordon Bleu</td>                              <td>₱380</td></tr>
+                <tr><td>Lumpiang Shanghai <span class="item-note">(12 pcs – Pork / Chicken / Fish)</span></td> <td>₱350</td></tr>
+                <tr><td>Pork Sisig <span class="item-note">(2–3 servings)</span></td> <td>₱300</td></tr>
+                <tr><td>Leche Flan</td>                                       <td>₱160</td></tr>
+                <tr><td>Pichi-pichi <span class="item-note">(3–4 servings)</span></td><td>₱110</td></tr>
+                <tr><td>Puto <span class="item-note">(12 pcs)</span></td>     <td>₱90</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Tab Panel: Drinks ---- -->
+      <div class="menu__panel" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks">
+        <div class="menu__panel-img">
+          <img src="images/menu/drinks.jpg" alt="DOM'S refreshing drinks" />
+        </div>
+
+        <div class="menu__table-wrap">
+          <div class="table-scroll">
+            <table class="menu__table menu__table--addons">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Gulaman <span class="item-note">(1 Liter)</span></td><td>₱110</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Notes -->
+      <div class="menu__notes">
+        <p>💳 Accepts payment via <strong>GCash</strong></p>
+        <p>🛵 Self-booking via <strong>Grab Express</strong> and <strong>Lalamove</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       5. BRANCHES / FIND US SECTION
+  ==================================================== -->
+  <section class="branches section" id="branches">
+    <div class="container">
+
+      <h2 class="section__title">Find Us</h2>
+      <div class="section__underline" aria-hidden="true"></div>
+
+      <!-- Branch Cards -->
+      <div class="branches__grid">
+
+        <!-- Branch 1 -->
+        <div class="branch__card">
+          <div class="branch__icon">📍</div>
+          <h3 class="branch__name">Zabarte, Novaliches</h3>
+          <p class="branch__address">Novaliches, Quezon City</p>
+          <ul class="branch__contacts">
+            <li><span class="branch__contact-icon">📞</span> <a href="tel:+639854048127">0985-404-8127</a></li>
+            <li><span class="branch__contact-icon">📞</span> <a href="tel:+639532248927">0953-224-8927</a></li>
+          </ul>
+        </div>
+
+        <!-- Branch 2 -->
+        <div class="branch__card">
+          <div class="branch__icon">📍</div>
+          <h3 class="branch__name">Petron Don Jose, Commonwealth</h3>
+          <p class="branch__address">Commonwealth Ave., Quezon City</p>
+          <ul class="branch__contacts">
+            <li><span class="branch__contact-icon">📞</span> <a href="tel:+639531445149">0953-144-5149</a></li>
+            <li><span class="branch__contact-icon">📞</span> <a href="tel:+639486254122">0948-625-4122</a></li>
+          </ul>
+        </div>
+
+        <!-- Branch 3 — Main -->
+        <div class="branch__card branch__card--main">
+          <div class="branch__badge">Main Branch</div>
+          <div class="branch__icon">📍</div>
+          <h3 class="branch__name">Fairview Regalado</h3>
+          <p class="branch__address">
+            71 Regalado Ave cor. Pontiac St.,<br />
+            Fairview, Quezon City 1118
+          </p>
+          <ul class="branch__contacts">
+            <li><span class="branch__contact-icon">📞</span> <a href="tel:+639310116351">0931-011-6351</a></li>
+            <li><span class="branch__contact-icon">📞</span> <a href="tel:+639352936851">0935-293-6851</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Hours -->
+      <div class="branches__hours">
+        <span class="hours__icon">🕘</span>
+        <span>Open Daily: <strong>Monday – Sunday</strong> &nbsp;|&nbsp; <strong>9:00 AM – 8:00 PM</strong></span>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="branches__map">
+        <iframe
+          title="DOM'S Pancit Fairview Location on Google Maps"
+          src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=Dom%27s+Pancit+71+Regalado+Avenue+Fairview+Quezon+City"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       6. CONTACT / ORDER SECTION
+  ==================================================== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+
+      <h2 class="section__title contact__title">Order or Get in Touch</h2>
+      <p class="contact__subtext">
+        Want to place an order or make a reservation?<br />
+        Message us directly on Facebook!
+      </p>
+
+      <a href="https://www.facebook.com/profile.php?id=100071802099526"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn--white btn--lg" id="contactFbBtn">
+        💬 Message Us on Facebook
+      </a>
+
+      <p class="contact__delivery">
+        Also available on &nbsp;🟢 <strong>GrabFood</strong>&nbsp; and &nbsp;🐼 <strong>Foodpanda</strong>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       7. FOOTER
+  ==================================================== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__grid">
+
+      <!-- Left: Brand -->
+      <div class="footer__brand">
+        <p class="footer__brand-name">DOM'S Pancit</p>
+        <p class="footer__tagline">Your Everyday Pancit</p>
+      </div>
+
+      <!-- Center: Quick Links -->
+      <nav class="footer__links" aria-label="Footer navigation">
+        <p class="footer__links-label">Quick Links</p>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#branches">Find Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Right: Social -->
+      <div class="footer__social">
+        <p class="footer__social-label">Follow Us</p>
+        <a href="https://www.facebook.com/profile.php?id=100071802099526"
+           target="_blank" rel="noopener noreferrer"
+           class="footer__fb-link" id="footerFbLink">
+          <svg class="footer__fb-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+          </svg>
+          Facebook
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <p>&copy; 2025 DOM'S Pancit. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
