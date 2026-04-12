@@ -131,4 +131,78 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* =========================================================
+     5. HERO SLIDER
+     Auto-playing image slider with navigation controls
+  ========================================================= */
+  const slides = document.querySelectorAll('.hero__slider .slide');
+  const dots = document.querySelectorAll('.slider-indicators .dot');
+  const prevBtn = document.getElementById('sliderPrev');
+  const nextBtn = document.getElementById('sliderNext');
+  
+  if (slides.length > 0) {
+    let currentSlide = 0;
+    let slideInterval;
+
+    function goToSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+      
+      currentSlide = (index + slides.length) % slides.length;
+      
+      slides[currentSlide].classList.add('active');
+      if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    function startSlider() {
+      slideInterval = setInterval(nextSlide, 5000); // Change image every 5 seconds
+    }
+
+    function stopSlider() {
+      clearInterval(slideInterval);
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopSlider();
+        startSlider(); // reset timer
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopSlider();
+        startSlider();
+      });
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+        stopSlider();
+        startSlider();
+      });
+    });
+
+    // Pause slideshow on hover
+    const heroSliderWrap = document.querySelector('.hero__slider-wrap');
+    if (heroSliderWrap) {
+      heroSliderWrap.addEventListener('mouseenter', stopSlider);
+      heroSliderWrap.addEventListener('mouseleave', startSlider);
+    }
+
+    // Start auto-play
+    startSlider();
+  }
+
 }); // end DOMContentLoaded

@@ -90,9 +90,34 @@
         </div>
       </div>
 
-      <!-- Right: Hero Image -->
-      <div class="hero__image-wrap">
-        <img src="images/hero.jpg" alt="A delicious serving of DOM'S Pancit Bihon" class="hero__image" />
+      <!-- Right: Hero Slider -->
+      <div class="hero__slider-wrap">
+        <div class="hero__slider" id="heroSlider">
+          <div class="slide active">
+            <img src="images/Pancit sisig.jpg" alt="DOM'S Pancit Sisig promo" class="hero__image" />
+          </div>
+          <div class="slide">
+            <img src="images/your everyday pancit.jpg" alt="Your everyday pancit ad" class="hero__image" />
+          </div>
+          <div class="slide">
+            <img src="images/hungry order now.jpg" alt="Hungry order now" class="hero__image" />
+          </div>
+          <div class="slide">
+            <img src="images/best seller palabok manaok.jpg" alt="Best seller palabok and chicken" class="hero__image" />
+          </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-btn slider-btn--prev" id="sliderPrev" aria-label="Previous slide">❮</button>
+        <button class="slider-btn slider-btn--next" id="sliderNext" aria-label="Next slide">❯</button>
+        
+        <!-- Indicators -->
+        <div class="slider-indicators" id="sliderDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
       </div>
 
     </div>
@@ -168,7 +193,7 @@
       <!-- ---- Tab Panel: Pancit & Pasta ---- -->
       <div class="menu__panel active" id="panel-pancit" role="tabpanel" aria-labelledby="tab-pancit">
         <div class="menu__panel-img">
-          <img src="images/menu/pancit.jpg" alt="DOM'S Pancit and Pasta dishes" />
+          <img src="images/bihon guisado.jpg" alt="DOM'S Pancit and Pasta dishes" />
         </div>
 
         <div class="menu__table-wrap">
@@ -203,7 +228,7 @@
       <!-- ---- Tab Panel: Spicy Variants ---- -->
       <div class="menu__panel" id="panel-spicy" role="tabpanel" aria-labelledby="tab-spicy">
         <div class="menu__panel-img">
-          <img src="images/menu/spicy.jpg" alt="DOM'S Spicy Pancit variants" />
+          <img src="images/Pancit sisig.jpg" alt="DOM'S Spicy Pancit variants" />
         </div>
 
         <div class="menu__table-wrap">
@@ -238,7 +263,7 @@
       <!-- ---- Tab Panel: Add-ons ---- -->
       <div class="menu__panel" id="panel-addons" role="tabpanel" aria-labelledby="tab-addons">
         <div class="menu__panel-img">
-          <img src="images/menu/addons.jpg" alt="DOM'S Add-on dishes" />
+          <img src="images/lumpia.jpg" alt="DOM'S Add-on dishes" />
         </div>
 
         <div class="menu__table-wrap">
@@ -267,7 +292,7 @@
       <!-- ---- Tab Panel: Drinks ---- -->
       <div class="menu__panel" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks">
         <div class="menu__panel-img">
-          <img src="images/menu/drinks.jpg" alt="DOM'S refreshing drinks" />
+          <img src="images/Gulaman.jpg" alt="DOM'S refreshing drinks" />
         </div>
 
         <div class="menu__table-wrap">
