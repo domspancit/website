@@ -752,6 +752,47 @@ button {
   font-size: 0.85rem;
 }
 
+/* Delivery Links */
+.branch__delivery {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.branch__delivery-btn {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--white);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.branch__delivery-btn:hover {
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+.branch__delivery-btn--panda {
+  background: #D70F64;
+}
+
+.branch__delivery-btn--panda:hover {
+  background: #A90C50;
+}
+
+.branch__delivery-btn--grab {
+  background: #00B14F;
+}
+
+.branch__delivery-btn--grab:hover {
+  background: #008f40;
+}
+
 /* Hours Banner */
 .branches__hours {
   display: flex;
