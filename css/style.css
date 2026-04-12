@@ -637,21 +637,58 @@ button {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Panel Food Image */
-.menu__panel-img {
-  width: 100%;
-  border-radius: var(--radius-md);
-  overflow: hidden;
+/* Menu Image Gallery */
+.menu__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   margin-bottom: 28px;
-  aspect-ratio: 16/7;
-  box-shadow: var(--shadow-sm);
+}
+
+/* Flip Card Base */
+.flip-card {
+  flex: 1 1 250px;
+  max-width: 380px;
+  aspect-ratio: 4/5;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   background: #111;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Base Panel Image Logic */
 .panel__bg {
   position: absolute;
   top: -10%;
@@ -676,9 +713,21 @@ button {
   filter: drop-shadow(0 4px 15px rgba(0,0,0,0.3));
 }
 
-.menu__panel-img:hover img,
-.menu__panel-img:hover .panel__bg {
-  transform: scale(1.03);
+.flip-card:hover .menu__panel-img img,
+.flip-card:hover .panel__bg {
+  transform: scale(1.05);
+}
+
+/* Unique Back Logo Modifier */
+.menu__panel-img--logo {
+  background: linear-gradient(135deg, #F7941D 0%, #f5a93c 100%);
+}
+
+.menu__panel-img--logo .logo-back {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  filter: none;
 }
 
 /* Size Note */
