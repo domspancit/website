@@ -605,7 +605,8 @@
         "radius": 3,
         "variant": "solid",
         "headerVariant": "solid",
-        "proactiveBubbleMessage": "Hi! 👋 Order now or ask me anything!"
+        "proactiveBubbleMessage": "Hi! 👋 Order now or ask me anything!",
+        "additionalStylesheet": "\n          .bpw-floating-button {\n            box-shadow: 0 0 15px 2px rgba(247, 148, 29, 0.6) !important;\n            animation: bpPulsate 2.5s infinite;\n          }\n          .bpw-chat-container, .bpw-layout {\n            box-shadow: 0 0 25px 2px rgba(247, 148, 29, 0.25) !important;\n          }\n          @keyframes bpPulsate {\n            0% { box-shadow: 0 0 10px 0px rgba(247, 148, 29, 0.5); }\n            50% { box-shadow: 0 0 20px 6px rgba(247, 148, 29, 0.9); }\n            100% { box-shadow: 0 0 10px 0px rgba(247, 148, 29, 0.5); }\n          }\n          @media (max-width: 768px) {\n            .bpw-floating-button { transform: scale(0.9); bottom: 15px; right: 15px; }\n          }\n        "
       }
     });
   </script>
